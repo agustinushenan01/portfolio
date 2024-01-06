@@ -47,6 +47,7 @@ menuIcon.addEventListener("click", () => {
 window.addEventListener("scroll", function () {
     var scroll = window.scrollY;
     var isTabletOrMobile = window.innerWidth < 769;
+    var phone = window.innerWidth  <= 480;
 
     if (scroll > 440 && isTabletOrMobile) {
         menuList.style.backgroundColor = "rgba(255, 255, 255, .8)";
@@ -60,5 +61,8 @@ window.addEventListener("scroll", function () {
     }
     if (!isTabletOrMobile) {
         menuList.style.background = 'none';
+    }
+    if (phone) {
+        menuList.style.marginTop = "63%";
     }
 });
