@@ -1,0 +1,1075 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    position: relative;
+    background-image: url(pexels-pixabay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    border-radius: 90px;
+    background: rgba(255, 255, 255, .2);
+    width: 80%;
+    height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .85);
+    transition: all 0.5s ease;
+    z-index: 9999;
+}
+
+.logo-container .logo {
+    height: 90px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    color: black;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover {
+    color: #1d5d9b;
+}
+
+header a button {
+    font-size: 30px;
+    padding: .3em .64em;
+    background: rgba(29, 92, 154, .8);
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-left: -20%;
+}
+
+header a button:hover {
+    background: rgba(29, 92, 154, 1);
+    box-shadow: 2px 2px #75C2F6, 3px 3px #75C2F6, 4px 4px #75C2F6;
+    transform: translateX(-3px);
+}
+
+.profil img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 13px solid rgba(29, 93, 155, 1);
+    position: absolute;
+
+}
+
+.saaya p {
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.saaya {
+    line-height: 6em;
+}
+
+.saaya p span {
+    color: #f4d160;
+    mix-blend-mode: hard-light;
+}
+
+.saaya a button {
+    font-size: 43px;
+    padding: .3em .64em;
+    background: rgba(29, 92, 154, 0.8);
+    border-radius: 100px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.saaya a button:hover {
+    background: rgba(29, 92, 154, 1);
+    box-shadow: 2px 2px #75C2F6, 3px 3px #75C2F6, 4px 4px #75C2F6;
+    transform: translateX(-3px);
+}
+
+.saya {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 5em;
+    transition: margin-top 0.5s;
+}
+
+.abt {
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.abt .abtme img {
+    width: 550px;
+    margin-left: -10%;
+}
+
+.abt .about h3 {
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.abt .about p {
+    font-size: 35px;
+}
+
+.abt .about {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.skill {
+    background-image: url(lukas.jpg);
+    display: flex;
+    width: 100%;
+    height: 533px;
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skill h3 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills h4 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.skills img {
+    width: 250px;
+}
+
+.blob {
+    z-index: -9;
+    position: relative;
+    display: flex;
+    left: -1%;
+    top: -1%;
+    right: -1%;
+    bottom: -1%;
+    width: 309px;
+    height: 309px;
+    background: rgba(29, 93, 155, 1);
+    border-radius: 50%;
+    animation: blob-rokv0k 3s infinite linear;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 1.5em;
+}
+
+.project .ruangngoding {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 2.5em 1em;
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 3px 0 #000000;
+    -moz-box-shadow: 0 0 3px 0 #000000;
+    box-shadow: 0 0 3px 0 #000000;
+    border-radius: 30px;
+}
+
+.project h2 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+
+.project .ruangngoding img {
+    width: 600px;
+}
+
+.project .ruangngoding .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.project .ruangngoding .text a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.project .ruangngoding .text a:hover {
+    color: #1d5d9b;
+}
+
+.project .ruangngoding .text p {
+    font-size: 35px;
+    margin-top: 1.5rem;
+}
+
+
+.contact {
+    width: 100%;
+    background-image: url(andrews.jpg);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.contact form input {
+    border: none;
+    border-bottom: 2px solid #1d5d9b;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #1d5d9b;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.contact form button {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(29, 92, 154, .8);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 9px 25px;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+
+}
+
+.contact form button:hover {
+    transform: scale(0.9);
+    background-color: rgba(29, 92, 154, 1);
+}
+
+.contact form textarea {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #1d5d9b;
+    border-bottom: 2px solid #1d5d9b;
+    /* outline: none; */
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-around;
+    padding: 3em 10em 3em 1.5em;
+}
+
+footer .footlogo {
+    display: flex;
+    align-items: center;
+}
+
+
+footer .footlogo .logo {
+    display: flex;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footfollow .sosialmed img {
+    width: 50px;
+}
+
+footer .footfollow .sosialmed {
+    display: flex;
+    gap: 0.7rem;
+}
+
+footer .footabout {
+    width: 400px;
+    margin-right: 1em;
+}
+
+footer .footabout h5,
+footer .footfollow h5 {
+    margin-bottom: 2rem;
+}
+
+footer h5 {
+    font-size: 30px;
+}
+
+footer p {
+    font-size: 27px;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .tak {
+    display: none;
+}
+
+
+
+
+/* Animasi */
+@keyframes blob-rokv0k {
+    12.5% {
+        border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%;
+    }
+
+    25% {
+        border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%;
+    }
+
+    37.5% {
+        border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%;
+    }
+
+    50% {
+        border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%;
+    }
+
+    62.5% {
+        border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%;
+    }
+
+    75% {
+        border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%;
+    }
+
+    87.5% {
+        border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .head {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        width: 80%;
+        padding: .5rem;
+        font-size: 1em;
+    }
+
+    header .logo-container .logo {
+        height: 60px;
+        margin-left: 20%;
+    }
+
+    /* header a button {
+        font-size: 20px;
+        padding: 5px 15px;
+        margin-left: 10%;
+    } */
+
+    .profil img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* .saya {
+        top: 80px;
+    } */
+
+    .saaya p {
+        font-size: 24px;
+    }
+
+    .saaya a button {
+        font-size: 24px;
+        padding: .3em .64em;
+    }
+
+    .saaya {
+        line-height: 3em;
+    }
+
+    .abt {
+        padding: .5em;
+    }
+
+    .abt .abtme img {
+        height: 200px;
+        width: auto;
+    }
+
+    .abt .about h3 {
+        font-size: 24px;
+    }
+
+    .abt .about p {
+        font-size: 17px;
+    }
+
+    .skill h3 {
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+
+    .skill h4 {
+        font-size: 1em;
+    }
+
+    .skill {
+        width: 100%;
+        height: auto;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .skill .skills {
+        display: flex;
+        gap: 2em;
+
+    }
+
+    .skill .skills img {
+        width: 140px;
+    }
+
+    .blob {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project h2 {
+        font-size: 24px;
+    }
+
+    .project .ruangngoding img {
+        width: 100%;
+    }
+
+    .project .ruangngoding .text a {
+        font-size: 24px;
+    }
+
+    .project .ruangngoding .text p {
+        font-size: 20px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1rem;
+    }
+
+    footer .footlogo .logo {
+        width: 150px;
+    }
+
+    footer .footabout {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer h5 {
+        font-size: 1.2rem;
+    }
+
+    footer .footfollow .sosialmed img {
+        width: 30px;
+    }
+
+    /* Humburger menu */
+    .hamburger {
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible;
+    }
+
+    .hamburger:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger.is-active:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: #000;
+    }
+
+    .hamburger-box {
+        width: 40px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+        margin-top: -2px;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        content: "";
+        display: block;
+    }
+
+    .hamburger-inner::before {
+        top: -10px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -10px;
+    }
+
+
+
+
+
+    .hamburger--squeeze .hamburger-inner {
+        transition-duration: 0.075s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .hamburger--squeeze .hamburger-inner::before {
+        transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+    }
+
+    .hamburger--squeeze .hamburger-inner::after {
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner {
+        transform: rotate(45deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner::before {
+        top: 0;
+        opacity: 0;
+        transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+
+    header .cact {
+        display: none;
+    }
+
+    /* header nav .cact button {
+        padding:0;
+        width: 50px;
+    } */
+
+    header .tak {
+        display: inline;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 42%;
+        background-color: rgba(255, 255, 255, .2);
+        box-shadow: 0 0 5px rgba(255, 255, 255, .85);
+        width: 900%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 90px;
+        padding: 1em;
+        line-height: 1.5em;
+    }
+
+    header nav.hidden {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header .cact {
+        display: none;
+    }
+
+    /* header nav .cact button {
+        padding:0;
+        width: 50px;
+    } */
+
+    header .tak {
+        display: inline;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 63%;
+        background-color: rgba(255, 255, 255, .2);
+        box-shadow: 0 0 5px rgba(255, 255, 255, .85);
+        width: 900%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 90px;
+        padding: 1em;
+        line-height: 1.5em;
+    }
+
+    header nav.hidden {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body {
+        font-size: 20px;
+    }
+    
+    .head {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        width: 98%;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    header .logo-container .logo {
+        height: 50px;
+        margin-left: 40%;
+    }
+
+
+    /* header nav ul.show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        background-color: rgba(255, 255, 255, .8);
+        box-shadow: 0 0 5px rgba(255, 255, 255, .85);
+        z-index: 999;
+    } */
+
+    /* header nav ul li {
+        padding: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    } */
+
+
+
+    /* header a button {
+        font-size: 20px;
+        padding: 5px 15px;
+        margin-left: 10%;
+    } */
+
+    .profil img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .blob {
+        width: 120px;
+        height: 120px;
+    }
+
+    .saya {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: auto;
+    }
+
+    .saaya p {
+        font-size: 18px;
+    }
+
+    .saaya a button {
+        font-size: 16px;
+        padding: .3em .64em;
+    }
+
+    .saaya {
+        line-height: 2em;
+    }
+
+    .abt {
+        padding: 1.5em;
+    }
+
+    .abt .abtme img {
+        display: none;
+    }
+
+    .abt .about h3 {
+        font-size: 24px;
+    }
+
+    .abt .about p {
+        font-size: 17px;
+    }
+
+    .skill h3 {
+        font-size: 24px;
+        margin-bottom: 1em;
+    }
+
+    .skill h4 {
+        font-size: 1em;
+    }
+
+    .skill {
+        width: 100%;
+        height: auto;
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .skill .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .skill .skills img {
+        width: 140px;
+    }
+
+    .project h2 {
+        font-size: 24px;
+    }
+
+    .project .ruangngoding {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project .ruangngoding img {
+        width: 100%;
+    }
+
+    .project .ruangngoding .text a {
+        font-size: 24px;
+    }
+
+    .project .ruangngoding .text p {
+        font-size: 20px;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1rem;
+    }
+
+    footer .footlogo .logo {
+        width: 150px;
+    }
+
+    footer .footabout {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    footer h5 {
+        font-size: 1.2rem;
+    }
+
+    footer .footfollow .sosialmed img {
+        width: 30px;
+    }
+
+    /* Humburger menu */
+    .hamburger {
+        padding: 10px 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition-property: opacity, filter;
+        transition-duration: 0.15s;
+        transition-timing-function: linear;
+        font: inherit;
+        color: inherit;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        overflow: visible;
+    }
+
+    .hamburger:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger.is-active:hover {
+        opacity: 0.7;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: #000;
+    }
+
+    .hamburger-box {
+        width: 26px;
+        height: 10px;
+        display: inline-block;
+        position: relative;
+        margin-left: -80%;
+    }
+
+    .hamburger-inner {
+        display: block;
+        top: 50%;
+        margin-top: -2px;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 40px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+    }
+
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        content: "";
+        display: block;
+    }
+
+    .hamburger-inner::before {
+        top: -10px;
+    }
+
+    .hamburger-inner::after {
+        bottom: -10px;
+    }
+
+
+
+
+
+    .hamburger--squeeze .hamburger-inner {
+        transition-duration: 0.075s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .hamburger--squeeze .hamburger-inner::before {
+        transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+    }
+
+    .hamburger--squeeze .hamburger-inner::after {
+        transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner {
+        transform: rotate(45deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner::before {
+        top: 0;
+        opacity: 0;
+        transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+    }
+
+    .hamburger--squeeze.is-active .hamburger-inner::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+}
